@@ -1,0 +1,176 @@
+:root {
+  --menu-background-color: #0ea5e9;
+  --header-background-color: #e0f2fe;
+  --content-background-color: #bfdbfe;
+  --card-background-color: #e5e7eb;
+  --content-top-font-color: #030712;
+  --content-bottom-font-color: #334155;
+}
+
+* {
+  margin: 0;
+}
+
+h3 {
+  color: var(--content-top-font-color);
+}
+
+h4 {
+  color: var(--content-bottom-font-color);
+}
+img {
+  width: 30px;
+  height: auto;
+}
+
+img[src="icons/monitor-dashboard.svg"] {
+  width: 50px;
+  height: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.grid-left {
+  background-color: var(--menu-background-color);
+  grid-column: 1/2;
+}
+
+.grid-right {
+  background-color: var(--content-background-color);
+  grid-column: 2/3;
+}
+
+.grid-left-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 5px;
+  margin-left: 30px;
+  margin-right: 10px;
+  padding-top: 2vh;
+}
+
+.blank {
+  grid-column: span 2;
+  padding: 20px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr 2fr;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  align-items: center;
+  background-color: var(--header-background-color);
+  grid-row-gap: 20px;
+}
+
+img[src="icons/magnify.svg"] {
+  justify-self: end;
+}
+
+img[src="icons/bell-ring-outline.svg"] {
+  justify-self: end;
+}
+
+img[src="icons/profilePic.png"] {
+  width: 50px;
+  height: auto;
+  border-radius: 20px;
+}
+
+#profile-1 {
+  justify-self: center;
+}
+
+#profile-2 {
+  justify-self: end;
+}
+
+input {
+  border-radius: 5px;
+}
+
+.greeting {
+  margin-left: 10px;
+}
+
+.box {
+  padding: 5px 10px;
+  border: 1px solid var(--menu-background-color);
+  width: fit-content;
+  border-radius: 15px;
+  background-color: var(--menu-background-color);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.content-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin: 10px;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 10px;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 10px;
+  box-shadow: 2px 2px 5px 0px #000000;
+
+  background-color: var(--card-background-color);
+}
+
+.yellow {
+  border-left: 5px solid yellow;
+}
+
+.reaction {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.words {
+  margin-bottom: 50px;
+}
+
+.content-left {
+  margin: 10px;
+}
+
+.updates {
+  margin: 10px;
+  margin-left: 0;
+  margin-right: 200px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.line {
+  border-bottom: 1px solid grey;
+  margin: 5px 0px;
+}
+
+.profiles > img {
+  border-radius: 10px;
+  margin: 5px;
+  width: 40px;
+  height: auto;
+}
+
+.profiles {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
